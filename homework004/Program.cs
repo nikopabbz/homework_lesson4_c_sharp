@@ -6,7 +6,7 @@ int[] Array(int len)
     int[] array = new int[len];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(1, 100);
+        array[i] = new Random().Next(-10, -1);
     }
     return array;
 }
@@ -19,8 +19,8 @@ void SetOutput(int[] array)
 }
 int SecondMax(int[] array)
 {
-    int max = 0;
-    int secondMax = 0;
+    int max = array[0];
+    int secondMax = array[0];
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > max) 
