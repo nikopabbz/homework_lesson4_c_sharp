@@ -7,8 +7,12 @@ int Prompt(string msg)
 }
 double Square(int a, int b)
 {
-    double count = Math.Pow(a, b);
-    return count;
+    double temp = 1;
+    for (int i = 0; i < b; i++)
+    {
+        temp = temp * a;
+    }
+    return temp;
 }
 int a = Prompt("Введите число А -> ");
 int b = Prompt("Введите число B -> ");
